@@ -40,5 +40,5 @@ function retry(){
 }
 
 function goNext(){
-  window.location.href = "/zarf";
+  window.location.href = "../zarf/";
 }
