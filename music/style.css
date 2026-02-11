@@ -1,0 +1,145 @@
+*{
+  box-sizing:border-box;
+  font-family:"Segoe UI",sans-serif;
+}
+
+body{
+  margin:0;
+  height:100vh;
+  background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+  background-size:400% 400%;
+  animation: slowGradient 60s ease infinite;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  position:relative;
+  overflow:hidden;
+}
+
+.player-card{
+  background:rgba(255,255,255,0.1);
+  border-radius:25px;
+  padding:25px;
+  width:300px;
+  text-align:center;
+  box-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+
+.cover{
+  width:220px;
+  border-radius:20px;
+  margin-bottom:15px;
+}
+
+h2{
+  margin:5px 0;
+}
+
+p{
+  margin:0 0 15px;
+  color:#ccc;
+}
+
+.progress-container{
+  width:100%;
+  height:6px;
+  background:#555;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.progress{
+  height:100%;
+  width:0%;
+  background:#ebebeb;
+  border-radius:5px;
+}
+
+.time{
+  display:flex;
+  justify-content:space-between;
+  font-size:12px;
+  margin-top:5px;
+}
+
+.controls{
+  margin-top:15px;
+}
+
+.controls button{
+  font-size:30px;
+  background:none;
+  border:none;
+  color:white;
+  cursor:pointer;
+}
+
+.note{
+  margin-top:20px;
+  text-align:center;
+  font-size:16px;
+  opacity:0.3;
+}
+
+.continue-btn{
+  margin-top:25px;
+  padding:12px 25px;
+  font-size:18px;
+  border:none;
+  border-radius:25px;
+  background:#ebebeb;
+  color:#000001;
+  cursor:pointer;
+  animation:pulse 4.5s infinite;
+}
+
+@keyframes pulse{
+  0%{transform:scale(1)}
+  50%{transform:scale(1.1)}
+  100%{transform:scale(1)}
+}
+
+@keyframes slowGradient {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+
+/* ŞİMŞEK KATI */
+body::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle, rgba(255,255,200,0.8), rgba(255,255,255,0.2), transparent);
+  opacity:0;
+  pointer-events:none;
+  animation: lightning 8s infinite;
+}
+
+@keyframes lightning{
+  0%   {opacity:0;}
+  92%  {opacity:0;}
+  93%  {opacity:0.8;}
+  94%  {opacity:0;}
+  96%  {opacity:0.5;}
+  97%  {opacity:0;}
+  100% {opacity:0;}
+}
+
+/* YAĞMUR */
+.rain span{
+  position:absolute;
+  top:-20px;
+  width:2px;
+  height:15px;
+  background:rgba(255,255,255,0.4);
+  animation: rainFall linear infinite;
+}
+
+@keyframes rainFall{
+  to{
+    transform: translateY(110vh);
+  }
+}
