@@ -22,5 +22,5 @@ function moveNo(){
 }
 
 function yesClick(){
-  window.location.href = "/ask-success/";
+  window.location.href = "ask-success/";
 }
