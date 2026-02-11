@@ -1,3 +1,3 @@
 function goLogin(){
-  window.location.href = "ask/";
+  window.location.href = "./ask/";
 }
