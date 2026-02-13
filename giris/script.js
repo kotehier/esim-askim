@@ -55,5 +55,5 @@ function retry(){
 }
 
 function goNext(){
-  window.location.href = "/note";
+  window.location.href = "/esim-askim/note";
 }
