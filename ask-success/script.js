@@ -1,3 +1,3 @@
 function goNext(){
-  window.location.href = "/giris";
+  window.location.href = "/esim-askim/giris";
 }
