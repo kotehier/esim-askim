@@ -15,8 +15,8 @@ body{
 
 /* ANA KART */
 .album-container{
-  width: 98vw;          /* ekranın neredeyse tamamı */
-  max-width: none;    /* telefonda büyük, tablette daha da büyük */
+  width: 98vw;          
+  max-width: none;    
   background: #fff0f5;
   border-radius: 25px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.2);
@@ -82,15 +82,11 @@ body{
   opacity:0.55;
 }
 
-/* DEVAM */
-.next-btn{
-  margin-top:5px;
-  width:100%;
-  padding:13px;
-  border:none;
-  border-radius:25px;
-  background:#d8899c;
-  color:white;
-  font-size:17px;
-  cursor:pointer;
+/* SAYAÇ */
+.counter{
+  text-align:center;
+  font-size:18px;
+  margin-top:12px;
+  color:#7a2f40;
+  font-weight:bold;
 }
