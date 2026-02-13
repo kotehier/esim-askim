@@ -70,5 +70,5 @@ startHeart.addEventListener("click", ()=>{
 });
 
 function goNext(){
-  window.location.href = "../music/";
+  window.location.href = "/esim-askim/music/";
 }
