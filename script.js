@@ -13,6 +13,6 @@ function goNext() {
   area.classList.add("fade-out");
 
   setTimeout(() => {
-    window.location.href = "/ready";
+    window.location.href = "../ready";
   }, 800);
 }
