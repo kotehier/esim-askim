@@ -1,3 +1,3 @@
 document.body.addEventListener("click", () => {
-  window.location.href = "/ask";
+  window.location.href = "/esim-askim/ask";
 });
