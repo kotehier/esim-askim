@@ -27,6 +27,6 @@ noBtn.addEventListener("click", () => {
 yesBtn.addEventListener("click", () => {
   yesBtn.classList.add("heart");  // kalp efekti
   setTimeout(() => {
-    window.location.href = "/ask-success";
+    window.location.href = "/esim-askim/ask-success";
   }, 600);
 });
