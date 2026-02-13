@@ -13,6 +13,6 @@ function goNext() {
   area.classList.add("fade-out");
 
   setTimeout(() => {
-    window.location.href = "/esim-askim/ready/index.html";
+    window.location.href = "/esim-askim/ready/";
   }, 800);
 }
