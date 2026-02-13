@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eyes don't lie'</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="overlay">Ekrana dokun 🤍</div>
+
+<div class="rain"></div>
+
+<div class="player-card">
+
+  <img src="cover.jpg" class="cover" alt="eyes don't lie">
+
+  <h2>eyes don't lie'</h2>
+  <p>Isabel LaRosa</p>
+
+  <audio id="audio" src="eyes-dont-lie.mp3"></audio>
+
+  <div class="progress-container" onclick="setProgress(event)">
+    <div class="progress" id="progress"></div>
+  </div>
+
+  <div class="time">
+    <span id="current">0:00</span>
+    <span id="duration">0:00</span>
+  </div>
+
+  <div class="note">
+    magazinim gözlerin
+  </div>
+
+</div>
+
+<button class="continue-btn" onclick="goNext()">Devam</button>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+*{
+  box-sizing:border-box;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body{
+  margin:0;
+  height:100vh;
+  overflow:hidden;
+  background:#f6c1cc;
+  animation:fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+  from{opacity:0}
+  to{opacity:1}
+}
+
+/* BAŞLANGIÇ KALBİ */
+#startHeart{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-size:90px;
+  cursor:pointer;
+  animation:pulse 1.5s infinite;
+  z-index:10;
+}
+
+@keyframes pulse{
+  0%{transform:translate(-50%,-50%) scale(1)}
+  50%{transform:translate(-50%,-50%) scale(1.2)}
+  100%{transform:translate(-50%,-50%) scale(1)}
+}
+
+/* PATLAMA KALPLERİ */
+#explosion span{
+  position:absolute;
+  font-size:22px;
+  animation:explode 6s linear forwards;
+}
+
+@keyframes explode{
+  to{
+    transform:translate(var(--x), var(--y));
+    opacity:0;
+  }
+}
+
+/* YAĞAN KALPLER */
+#rain span{
+  position:absolute;
+  top:-20px;
+  font-size:20px;
+  animation:fall linear infinite;
+}
+
+@keyframes fall{
+  to{transform:translateY(110vh);}
+}
+
+/* YAZI (fade + blur) */
+#textArea{
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:82%;
+  max-width:420px;
+  padding-top:20px;
+  color:#6b1f3b;
+  font-size:19px;
+  line-height:1.75;
+  font-weight:600;
+  display:none;
+  text-align:left;
+
+  opacity:0;
+  filter:blur(8px);
+  transition:opacity 2s ease, filter 2s ease;
+}
+
+#textArea.show{
+  opacity:1;
+  filter:blur(0);
+}
+
+/* BUTON */
+#continueBtn{
+  position:absolute;
+  right:20px;
+  bottom:20px;
+  display:none;
+  padding:10px 18px;
+  font-size:16px;
+  border-radius:10px;
+  border:none;
+  background:#ffffffcc;
+  color:#6b1f3b;
+}
